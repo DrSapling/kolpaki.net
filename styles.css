@@ -5,6 +5,7 @@ body {
     background-color: darkgray;
     margin: 0;
     padding: 0;
+    color: white;
 }
 
 h1 {
@@ -17,7 +18,7 @@ h4 {
 }
 
 .packs {
-    background-color: aqua;
+    background-color: rgb(31, 31, 31);
     display: flex;
     flex-direction: column; /* Elementy jeden pod drugim */
     align-items: center; /* Wycentrowanie w poziomie */
@@ -26,7 +27,7 @@ h4 {
 }
 
 .pack_container {
-    background-color: white;
+    background-color: rgb(58, 58, 58);
     display: flex;
     flex-direction: column; /* Domyślnie kolumna */
     justify-content: center;
@@ -66,13 +67,16 @@ h4 {
     background-color: #38d511;
     border-radius: 1000px;
     
-    color: black;
+    color: rgb(255, 255, 255);
     text-decoration: none;
     font-size: x-large;
     font-weight: 500;
     margin-top: 20px; /* Odstęp między tekstami a przyciskiem */
+
+    transition-duration: 0.1s;
 }
 
 .download_button_container:hover {
-    background-color: #32bb10;
+    transition-duration: 0.1s;
+    background-color: #2ba00e;
 }
