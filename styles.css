@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: Poppins;
+    background-color: darkgray;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin: 0;
+}
+h4 {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+
+.packs {
+    background-color: aqua;
+    display: flex;
+    flex-direction: column; /* Elementy jeden pod drugim */
+    align-items: center; /* Wycentrowanie w poziomie */
+    justify-content: center; /* Wycentrowanie w pionie */
+    min-height: 100vh; /* Sprawia, że kontener zajmuje całą wysokość ekranu */
+}
+
+.pack_container {
+    background-color: white;
+    display: flex;
+    flex-direction: column; /* Domyślnie kolumna */
+    justify-content: center;
+    align-items: center; /* Wyśrodkowanie elementów w kontenerze */
+    padding: 40px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Nowe style dla pierwszego kontenera */
+.first_pack_container {
+    display: flex;
+    flex-direction: row; /* Ustawienie poziomego układu */
+    align-items: center; /* Wyrównanie elementów w pionie */
+}
+
+.first_pack_container svg {
+    margin-right: 20px; /* Margines pomiędzy logo a tekstami */
+}
+
+.text_container {
+    display: flex;
+    flex-direction: column; /* Teksty w kolumnie */
+    justify-content: center;
+    flex: 1; /* Pozwala na zajęcie dostępnej przestrzeni */
+}
+
+.download_button_container {
+    width: 200px; /* Ustawienie szerokości przycisku */
+    height: 70px; /* Ustawienie wysokości przycisku */
+    text-align: center; /* Wyśrodkowanie tekstu w poziomie */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    background-color: #38d511;
+    border-radius: 1000px;
+    
+    color: black;
+    text-decoration: none;
+    font-size: x-large;
+    font-weight: 500;
+    margin-top: 20px; /* Odstęp między tekstami a przyciskiem */
+}
+
+.download_button_container:hover {
+    background-color: #32bb10;
+}
